@@ -59,7 +59,7 @@ class DemoApp extends StatelessWidget {
 
     /*
      * MaterialApp 需要渲染时或者在 Flutter Inspector 中切换平台时 build 都会运行
-     * 
+     *
      */
     //final wordPairContent =  WordPair.random();
     return MaterialApp(
