@@ -36,7 +36,7 @@ class RandomWordsState extends State<RandomWords> {
     // return Text(wordPairContent.asPascalCase);
     return Scaffold(
       appBar: AppBar(
-        title: Text('自动生成无限数量“名称”'),
+        title: Text('自动生成无限数量“名称”-galaxyw-bing'),
       ),
       body: _buildSuggestions(),
     );
