@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 // You can use a relative import, i.e. `import 'category_route.dart;'` or
 // a package import.
 // More details at http://dart-lang.github.io/linter/lints/avoid_relative_lib_imports.html
-import 'package:demo_flutter_hello_rectangle/12_error/category_route.dart';
+import 'package:demo_flutter_hello_rectangle/06_input/category_route.dart';
 
 /// The function that is called when main.dart is run.
 void main() {
@@ -26,7 +26,6 @@ class UnitConverterApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Unit Converter',
       theme: ThemeData(
-        fontFamily: 'Raleway',
         textTheme: Theme.of(context).textTheme.apply(
               bodyColor: Colors.black,
               displayColor: Colors.grey[600],
