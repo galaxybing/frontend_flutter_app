@@ -4,12 +4,15 @@
 
 // You can read about packages here: https://flutter.io/using-packages/
 import 'package:flutter/material.dart';
-// import 'package:flutter/cupertino.dart'
 
-// You can use a relative import, i.e. `import 'category_route.dart;'` or
+// You can use a relative import, i.e. `import 'category.dart;'` or
 // a package import, as shown below.
 // More details at http://dart-lang.github.io/linter/lints/avoid_relative_lib_imports.html
-import 'package:demo_flutter_hello_rectangle/03_category_route/category_route.dart';
+import 'package:demo_flutter_hello_rectangle/02_category_widget/category.dart';
+
+const _categoryName = 'Cake';
+const _categoryIcon = Icons.cake;
+const _categoryColor = Colors.green;
 
 /// The function that is called when main.dart is run.
 void main() {
@@ -17,15 +20,23 @@ void main() {
 }
 
 /// This widget is the root of our application.
-///
-/// The first screen we see is a list [Categories].
+/// Currently, we just show one widget in our app.
 class UnitConverterApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: '单位-转换器',
-      home: CategoryRoute(),
+      home: Scaffold(
+        backgroundColor: Colors.green[100],
+        body: Center(
+          child: Category(
+            name: _categoryName,
+            color: _categoryColor,
+            iconLocation: _categoryIcon,
+          ),
+        ),
+      ),
     );
   }
 }
